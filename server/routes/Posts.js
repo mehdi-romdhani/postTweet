@@ -12,7 +12,7 @@ const router = express.Router();
 //Création de l'instance postModel
 const { Posts } = require('../models');
 
-// Définition de la route GET pour le chemin '/'
+// Définition de la route GET pour le chemin '/' endpoint
 router.get('/', async (req, res) => {
   const getAllPost = req.body;
   const allPost = await Posts.findAll(getAllPost)
